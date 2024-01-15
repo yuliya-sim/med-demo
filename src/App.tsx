@@ -11,6 +11,7 @@ import { PatientPage } from './pages/PatientPage';
 import { ResourcePage } from './pages/ResourcePage';
 import { SignInPage } from './pages/SignInPage';
 import { Image } from '@mantine/core';
+import logoImg from './assets/images/logo.ico';
 
 export function App(): JSX.Element | null {
   const medplum = useMedplum();
@@ -23,7 +24,7 @@ export function App(): JSX.Element | null {
 
   return (
     <AppShell
-      logo={<Image src="/src/assets/images/logo.ico" alt="Logo" height={24} width={24} />}
+      logo={<Image src={logoImg} alt="Logo" height={24} width={24} />}
       menus={[
         {
           title: 'My Links',
